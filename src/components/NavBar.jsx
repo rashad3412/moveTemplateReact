@@ -13,20 +13,22 @@ const NavBar = () => {
 
         {/* Hamburger Icon */}
         <button
-          className="text-2xl cursor-pointer md:hidden text-deepYellow focus:outline-none"
+          className={`flex justify-center items-center w-10 h-10 border border-transparent rounded text-4xl cursor-pointer md:hidden text-deepYellow focus:outline-none transition duration-300 ${
+            isOpen ? "hover:border-lightGray hover:bg-transparent" : ""
+          }`}
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
         >
-          {isOpen ? "✖" : "☰"}
+          {isOpen ? "☰" : "☰"}
         </button>
 
         {/* Navigation Links */}
         <div
           className={`${
             isOpen ? "opacity-100 visible" : "opacity-0 invisible"
-          } w-3/4 md:w-auto absolute md:relative top-16 md:top-auto left-1/2 md:left-auto transform md:transform-none -translate-x-1/2 md:translate-x-0 bg-royalBlue md:bg-transparent md:flex rounded-md transition-all duration-700 ease-in-out`}
+          } w-3/4 md:w-auto absolute md:relative top-20 md:top-auto left-1/2 md:left-auto transform md:transform-none -translate-x-1/2 md:translate-x-0 bg-royalBlue md:bg-transparent md:flex rounded-lg transition-all duration-700 ease-in-out`}
         >
-          <ul className="flex flex-col md:flex-row gap-2 font-Playfair tracking-widest text-xl p-4 md:p-0 justify-center items-center font-extralight">
+          <ul className="flex flex-col md:flex-row gap-2 font-Playfair tracking-widest text-xl p-4 md:p-0 md:border-none justify-center items-center font-extralight border-deepYellow border-2 rounded-lg ">
             <li>
               <a
                 href="#"
