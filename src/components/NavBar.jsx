@@ -1,27 +1,68 @@
-// NavBar for the MoveTemplate
+import { useState } from "react";
 
 const NavBar = () => {
-  return (
-    <div className="bg-royalBlue text-white fixed top-0 left-0 w-full flex items-center px-4 py-3 shadow-lg z-50">
-      {/* Logo */}
-      <div className="text-xl font-bold mr-auto text-deepYellow ">Logo</div>
+  const [isOpen, setIsOpen] = useState(false);
 
-      {/* Navigation Links */}
-      <ul className="flex gap-4 font-Playfair tracking-wide text-sm">
-        <li className="hover:underline hover:text-deepYellow transition-all duration-300 cursor-pointer">
-          Home
-        </li>
-        <li className="hover:underline hover:text-deepYellow transition-all duration-300 cursor-pointer">
-          About
-        </li>
-        <li className="hover:underline hover:text-deepYellow transition-all duration-300 cursor-pointer">
-          Company
-        </li>
-        <li className="hover:underline hover:text-deepYellow transition-all duration-300 cursor-pointer">
-          Contact
-        </li>
-      </ul>
-    </div>
+  return (
+    <nav className="bg-royalBlue text-white fixed top-0 left-0 w-full shadow-lg z-50">
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+        {/* Logo */}
+        <a href="#" className="text-xl font-bold text-deepYellow">
+          Logo
+        </a>
+
+        {/* Hamburger Icon */}
+        <button
+          className="text-2xl cursor-pointer md:hidden text-deepYellow focus:outline-none"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle menu"
+        >
+          {isOpen ? "✖" : "☰"}
+        </button>
+
+        {/* Navigation Links */}
+        <div
+          className={`${
+            isOpen ? "opacity-100 visible" : "opacity-0 invisible"
+          } w-3/4 md:w-auto absolute md:relative top-16 md:top-auto left-1/2 md:left-auto transform md:transform-none -translate-x-1/2 md:translate-x-0 bg-royalBlue md:bg-transparent md:flex rounded-md transition-all duration-700 ease-in-out`}
+        >
+          <ul className="flex flex-col md:flex-row gap-2 font-Playfair tracking-widest text-xl p-4 md:p-0 justify-center items-center font-extralight">
+            <li>
+              <a
+                href="#"
+                className="block py-2 md:py-0 px-3 hover:underline hover:decoration-deepYellow transition-all duration-300 cursor-pointer"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="block py-2 md:py-0 px-3 hover:underline hover:decoration-deepYellow transition-all duration-300 cursor-pointer"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="block py-2 md:py-0 px-3 hover:underline hover:decoration-deepYellow transition-all duration-300 cursor-pointer"
+              >
+                Company
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="block py-2 md:py-0 px-3 hover:underline hover:decoration-deepYellow transition-all duration-300 cursor-pointer"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 };
 
