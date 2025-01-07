@@ -1,3 +1,5 @@
+/* NavBar Component*/
+
 import { useState } from "react";
 
 const NavBar = () => {
@@ -7,10 +9,14 @@ const NavBar = () => {
     <nav className="bg-royalBlue  text-white fixed top-0 left-0 w-full shadow-lg z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
         {/* Logo */}
-        <a href="#" className="text-2xl  text-deepYellow px-4 font-medium ">
-          Logo
+        <a href="#" className="flex items-center space-x-2 px-4">
+          <div className="w-6 h-6 rounded-full bg-deepYellow flex items-center justify-center text-royalBlue font-bold">
+            M
+          </div>
+          <span className="text-lg text-deepYellow font-medium tracking-wide">
+            MeezHaul
+          </span>
         </a>
-
         {/* Hamburger Icon */}
         <button
           className="flex justify-center items-center w-10 h-10 border border-transparent rounded text-4xl cursor-pointer md:hidden text-deepYellow focus:outline-none transition duration-300 "
