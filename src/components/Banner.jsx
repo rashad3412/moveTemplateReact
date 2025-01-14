@@ -5,16 +5,17 @@ import {
   faMapMarkerAlt,
   faTruckMoving,
 } from "@fortawesome/free-solid-svg-icons";
+import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 function Banner() {
   return (
     <section>
-      <section className="hidden lg:block relative bg-gradient-to-b from-white to-gray-100 lg:py-4">
+      <section className="hidden lg:block  bg-gradient-to-b from-white to-gray-100 lg:py-4">
         <div className="flex justify-between items-start px-10">
           {/* Left Side: Logo */}
           <div className="flex flex-col space-y-4">
-            <div className="w-16 h-16 flex items-center   text-royalBlue text-2xl font-Roboto font-bold  relative left-16 italic">
-              <div className="w-8 h-8  flex items-center py-4 relative right-1">
+            <div className="w-16 h-16 flex items-center   text-royalBlue text-2xl font-Roboto font-bold  relative left-16 italic  xl:right-9">
+              <div className="w-8 h-8  flex items-center py-4 relative right-1 ">
                 <FontAwesomeIcon
                   icon={faTruckMoving}
                   className="text-royalBlue text-xl"
@@ -25,7 +26,7 @@ function Banner() {
           </div>
 
           {/* Right Side: Contact Info */}
-          <div className="flex space-x-8 ">
+          <div className="flex space-x-8 relative right-4 xl:right-20">
             {/* Call Us */}
             <div className="flex items-center space-x-4">
               <div className="w-8 h-8 rounded-full bg-deepYellow flex items-center justify-center shadow-md">
@@ -66,6 +67,30 @@ function Banner() {
                 Address
                 <div className="font-light">123 Main Street</div>
               </div>
+            </div>
+            <div className="hidden xl:flex items-center gap-2">
+              <span>
+                {/* Instagram Icon */}
+                <a
+                  href="https://www.instagram.com/yourprofile"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-royalBlue transition-colors duration-300"
+                >
+                  <FontAwesomeIcon icon={faInstagram} className="text-2xl" />
+                </a>
+              </span>
+              <span>
+                {/* LinkedIn Icon */}
+                <a
+                  href="https://www.linkedin.com/in/yourprofile"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-royalBlue transition-colors duration-300"
+                >
+                  <FontAwesomeIcon icon={faLinkedin} className="text-2xl" />
+                </a>
+              </span>
             </div>
           </div>
         </div>
