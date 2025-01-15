@@ -15,7 +15,7 @@ const NavBar = () => {
             <div className="w-6 h-6 rounded-full bg-deepYellow flex items-center justify-center text-royalBlue font-bold">
               M
             </div>
-            <span className="text-lg text-deepYellow font-medium tracking-wide">
+            <span className="text-lg text-lightGray font-medium tracking-wide">
               MeezHaul
             </span>
           </a>
