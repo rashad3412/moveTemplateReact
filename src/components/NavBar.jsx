@@ -2,20 +2,25 @@ import Banner from "./Banner";
 import { useState, useEffect } from "react";
 
 const NavBar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isSticky, setIsSticky] = useState(false);
+  const [isOpen, setIsOpen] = useState(false); // Mobile menu toggle
+  const [isSticky, setIsSticky] = useState(false); // Sticky navbar toggle
 
   useEffect(() => {
     const handleScroll = () => {
-      // Get the screen width
+      // Get the screen width and scroll position
       const windowWidth = window.innerWidth;
+      const scrollPosition = window.scrollY;
 
-      // Check if the screen width is smaller than `lg:` (1024px) or larger
-      if (windowWidth < 1024 || windowWidth >= 1024) {
-        // Get the scroll position
-        const scrollPosition = window.scrollY;
-
-        // If the scroll position is greater than 100px, make navbar sticky
+      // Apply different scroll behaviors based on the screen size
+      if (windowWidth < 1024) {
+        // Mobile: Make navbar sticky when scrollPosition >= 0
+        if (scrollPosition >= 0) {
+          setIsSticky(true);
+        } else {
+          setIsSticky(false);
+        }
+      } else {
+        // Laptop/Desktop: Make navbar sticky when scrollPosition >= 100
         if (scrollPosition >= 100) {
           setIsSticky(true);
         } else {
@@ -92,11 +97,16 @@ const NavBar = () => {
         </div>
 
         {/* Dropdown Menu for Mobile */}
-        {/* Dropdown Menu for Mobile */}
         <div
           className={`lg:hidden overflow-hidden bg-royalBlue transition-all duration-500 ease-in-out ${
-            isOpen ? "max-h-80 py-4" : "max-h-0"
+            isOpen ? "max-h-80 " : "max-h-0"
           }`}
+          style={{
+            position: "fixed", // Ensure the dropdown stays visible
+            top: isSticky ? "60px" : "auto", // Adjust dropdown positioning for sticky navbar
+            width: "100%", // Full-width dropdown
+            zIndex: 49, // Prevent overlapping with navbar
+          }}
         >
           <ul className="overflow-y-auto max-h-60 flex flex-col tracking-widest text-md px-4 font-sans font-thin">
             {[
