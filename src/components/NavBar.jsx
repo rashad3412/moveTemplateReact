@@ -87,7 +87,7 @@ const NavBar = () => {
                 <a
                   href="#"
                   key={link}
-                  className="block py-2 px-3 hover:decoration-deepYellow hover:underline hover:font-medium transition-all duration-300 cursor-pointer lg:text-md lg:hover:font-bold lg:px-1 lg:py-3"
+                  className="block py-2 px-4 hover:decoration-deepYellow hover:underline hover:font-medium transition-all duration-300 cursor-pointer lg:text-md lg:hover:font-bold lg:px-1 lg:py-3"
                 >
                   {link}
                 </a>
