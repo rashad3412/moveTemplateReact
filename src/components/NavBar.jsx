@@ -108,7 +108,7 @@ const NavBar = () => {
             zIndex: 49, // Prevent overlapping with navbar
           }}
         >
-          <ul className="overflow-y-auto max-h-60 flex flex-col tracking-widest text-md px-4 font-sans font-thin">
+          <ul className="overflow-y-auto max-h-60 flex flex-col tracking-widest text-md px-4 font-sans font-thin text-lightGray">
             {[
               "Home",
               "About",
