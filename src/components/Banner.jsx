@@ -21,7 +21,7 @@ function Banner() {
                   className="text-royalBlue text-xl"
                 />
               </div>
-              Meezaul
+              MeezHaul
             </div>
           </div>
 

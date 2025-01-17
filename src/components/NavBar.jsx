@@ -1,55 +1,97 @@
-/* NavBar Component*/
 import Banner from "./Banner";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Get the screen width
+      const windowWidth = window.innerWidth;
+
+      // Check if the screen width is smaller than `lg:` (1024px) or larger
+      if (windowWidth < 1024 || windowWidth >= 1024) {
+        // Get the scroll position
+        const scrollPosition = window.scrollY;
+
+        // If the scroll position is greater than 100px, make navbar sticky
+        if (scrollPosition >= 100) {
+          setIsSticky(true);
+        } else {
+          setIsSticky(false);
+        }
+      }
+    };
+
+    // Attach scroll event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup event listener
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <section>
+      {/* Banner */}
       <Banner />
-      <nav className="bg-royalBlue text-white fixed top-0 lg:top-24 left-0 w-full shadow-lg z-50 ">
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
-          {/* Logo */}
-          <a href="#" className="flex items-center space-x-2 px-4">
-            <div className="w-6 h-6 rounded-full bg-deepYellow flex items-center justify-center text-royalBlue font-bold">
-              M
-            </div>
-            <span className="text-lg text-lightGray font-medium tracking-wide">
-              MeezHaul
-            </span>
-          </a>
-          {/* Hamburger Icon for Mobile */}
-          <button
-            className="flex justify-center items-center w-10 h-10 border border-transparent rounded text-4xl cursor-pointer lg:hidden text-deepYellow focus:outline-none transition duration-300"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle menu"
-          >
-            <div className="text-2xl">{isOpen ? "x" : "☰"}</div>
-          </button>
 
-          {/* Links for Larger Screens (no <li> tags) */}
-          <div className="hidden lg:flex lg:min-w-56 lg:relative items-center space-x-6">
-            {[
-              "Home",
-              "About",
-              "Pages",
-              "Service",
-              "Feature",
-              "Blog",
-              "Contact",
-            ].map((link) => (
-              <a
-                href="#"
-                key={link}
-                className="block py-2 px-3  hover:decoration-deepYellow hover:underline hover:font-medium transition-all duration-300 cursor-pointer lg:text-md lg:hover:font-bold lg:px-1 lg:py-3"
-              >
-                {link}
-              </a>
-            ))}
+      {/* NavBar */}
+      <nav>
+        {/* Apply fixed class to navbar on scroll */}
+        <div
+          className={`${
+            isSticky
+              ? "fixed top-0 bg-royalBlue text-lightGray shadow-lg z-50 w-full"
+              : "relative bg-royalBlue"
+          } w-full transition-all duration-300`}
+        >
+          <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 text-lightGray w-full">
+            {/* Logo */}
+            <a href="#" className="flex items-center space-x-2 px-4">
+              <div className="w-6 h-6 rounded-full bg-deepYellow flex items-center justify-center text-royalBlue font-bold">
+                M
+              </div>
+              <span className="text-lg text-lightGray font-medium tracking-wide">
+                MeezHaul
+              </span>
+            </a>
+
+            {/* Hamburger Icon for Mobile */}
+            <button
+              className="flex justify-center items-center w-10 h-10 border border-transparent rounded text-4xl cursor-pointer lg:hidden text-deepYellow focus:outline-none transition duration-300"
+              onClick={() => setIsOpen(!isOpen)}
+              aria-label="Toggle menu"
+            >
+              <div className="text-2xl">{isOpen ? "x" : "☰"}</div>
+            </button>
+
+            {/* Links for Larger Screens */}
+            <div className="hidden lg:flex lg:min-w-56 lg:relative items-center space-x-6 ">
+              {[
+                "Home",
+                "About",
+                "Pages",
+                "Service",
+                "Feature",
+                "Blog",
+                "Contact",
+              ].map((link) => (
+                <a
+                  href="#"
+                  key={link}
+                  className="block py-2 px-3 hover:decoration-deepYellow hover:underline hover:font-medium transition-all duration-300 cursor-pointer lg:text-md lg:hover:font-bold lg:px-1 lg:py-3"
+                >
+                  {link}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
 
+        {/* Dropdown Menu for Mobile */}
         {/* Dropdown Menu for Mobile */}
         <div
           className={`lg:hidden overflow-hidden bg-royalBlue transition-all duration-500 ease-in-out ${
