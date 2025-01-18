@@ -15,7 +15,7 @@ function Banner() {
           {/* Left Side: Logo */}
           <div className="flex flex-col space-y-4">
             <div className="w-16 h-16 flex items-center   text-royalBlue text-2xl font-Roboto font-bold  relative left-16 italic  xl:right-9">
-              <div className="w-8 h-9  flex items-center py-4 relative right-1 ">
+              <div className="w-8 h-8  flex items-center py-4 relative right-1 ">
                 <FontAwesomeIcon
                   icon={faTruckMoving}
                   className="text-royalBlue text-xl"
