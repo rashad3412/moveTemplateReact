@@ -21,7 +21,7 @@ function HomePage() {
         {/* Text Layer with Lazy Load and Slide-Up Effect */}
         <section className="absolute top-24 px-3 text-slate-50  font-bold z-10 tracking-wide uppercase opacity-0 translate-y-10 animate-fadeInUp md:w-7/12 md:px-6 lg:px-10 lg:w-full">
           <h1 className="font-extrabold mb-4 font-sans text-sm tracking-tight text-deepYellow lg:text-xl lg:pt-3 lg:pb-3">
-            move with meezHaul
+            Move with meezHaul
           </h1>
 
           <p className="font-medium text-3xl tracking-wide mb-4 font-Roboto md:font-extrabold lg:text-5xl lg:pb-2">
