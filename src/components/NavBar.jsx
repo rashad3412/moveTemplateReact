@@ -1,5 +1,6 @@
 import Banner from "./Banner";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false); // Mobile menu toggle
@@ -54,15 +55,17 @@ const NavBar = () => {
           } w-full transition-all duration-300`}
         >
           <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 text-lightGray w-full">
-            {/* Logo */}
-            <a href="#" className="flex items-center space-x-2 px-4">
-              <div className="w-6 h-6 rounded-full bg-deepYellow flex items-center justify-center text-royalBlue font-bold">
-                M
+            <Link to="/">
+              <div href="#" className="flex items-center space-x-2 px-4">
+                <div className="w-6 h-6 rounded-full bg-deepYellow flex items-center justify-center text-royalBlue font-bold">
+                  M
+                </div>
+                <span className="text-lg text-lightGray font-medium tracking-wide">
+                  MeezHaul
+                </span>
               </div>
-              <span className="text-lg text-lightGray font-medium tracking-wide">
-                MeezHaul
-              </span>
-            </a>
+            </Link>
+            {/* Logo */}
 
             {/* Hamburger Icon for Mobile */}
             <button
@@ -84,13 +87,13 @@ const NavBar = () => {
                 "Blog",
                 "Contact",
               ].map((link) => (
-                <a
+                <Link
                   href="#"
                   key={link}
                   className="block py-2 px-4 hover:decoration-deepYellow hover:underline hover:font-medium transition-all duration-300 cursor-pointer lg:text-md lg:hover:font-bold lg:px-1 lg:py-3"
                 >
                   {link}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -110,21 +113,21 @@ const NavBar = () => {
         >
           <ul className="overflow-y-auto max-h-60 flex flex-col tracking-widest text-md px-4 font-sans font-thin text-lightGray">
             {[
-              "Home",
-              "About",
-              "Pages",
-              "Service",
-              "Feature",
-              "Blog",
-              "Contact",
+              { name: "Home", path: "/" },
+              // { name: "About", path: "/about" },
+              // { name: "Pages", path: "/pages" },
+              // { name: "Service", path: "/service" },
+              // { name: "Feature", path: "/feature" },
+              // { name: "Blog", path: "/blog" },
+              // { name: "Contact", path: "/contact" },
             ].map((link) => (
-              <li key={link}>
-                <a
-                  href="#"
+              <li key={link.name}>
+                <Link
+                  to={link.path}
                   className="block py-2 px-3 w-full text-left hover:bg-deepYellow hover:bg-opacity-20 hover:font-medium transition-all duration-300 cursor-pointer"
                 >
-                  {link}
-                </a>
+                  {link.name}
+                </Link>
               </li>
             ))}
           </ul>
