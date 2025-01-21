@@ -39,6 +39,11 @@ const NavBar = () => {
     };
   }, []);
 
+  // Function to handle link clicks
+  const handleLinkClick = () => {
+    setIsOpen(false); // Close the menu when a link is clicked
+  };
+
   return (
     <section>
       {/* Banner */}
@@ -125,6 +130,7 @@ const NavBar = () => {
                 <Link
                   to={link.path}
                   className="block py-2 px-3 w-full text-left hover:bg-deepYellow hover:bg-opacity-20 hover:font-medium transition-all duration-300 cursor-pointer"
+                  onClick={handleLinkClick} // Close the menu when clicking a link
                 >
                   {link.name}
                 </Link>
