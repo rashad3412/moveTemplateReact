@@ -10,7 +10,7 @@ function ContactPage() {
           <img
             src={movingBox}
             alt="boxPictureTwo"
-            className="w-full h-[20rem] object-cover "
+            className="w-full h-[20rem]  "
           />
           {/* Overlay Layer */}
           <div className="absolute inset-0 bg-black bg-opacity-70 w-full h-80 "></div>
@@ -102,9 +102,9 @@ function ContactPage() {
             {/* Submit Button */}
             <button
               type="submit"
-              className="bg-royalBlue text-white font-medium px-4 py-2 rounded shadow-md hover:bg-deepYellow hover:text-royalBlue transition-all duration-300"
+              className="bg-deepYellow text-royalBlue font-medium px-4 py-2 rounded shadow-md hover:bg-deepYellow transition-all duration-300 cursor-pointer tracking-wide"
             >
-              Submit
+              Send Message
             </button>
           </form>
         </div>
