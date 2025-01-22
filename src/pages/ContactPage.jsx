@@ -5,15 +5,15 @@ function ContactPage() {
   return (
     <div>
       <section className="relative flex justify-center">
-        <div className="relative rounded">
+        <div className="relative rounded w-full h-[300px] top-3">
           {/* Image */}
           <img
             src={movingBox}
             alt="boxPictureTwo"
-            className="w-full h-[20rem] object-cover "
+            className="w-full h-full object-cover "
           />
           {/* Overlay Layer */}
-          <div className="absolute inset-0 bg-black bg-opacity-70 w-full h-80 "></div>
+          <div className="absolute inset-0 bg-black bg-opacity-70 w-full h-[300px] "></div>
           {/* Add your form or contact details */}
           <div className="absolute inset-0 flex flex-col justify-center items-center text-white">
             <h2 className="text-5xl font-extrabold mb-2 tracking-tight font-Roboto">
