@@ -10,7 +10,7 @@ function ContactPage() {
           <img
             src={movingBox}
             alt="boxPictureTwo"
-            className="w-full h-80 object-cover "
+            className="w-full h-[20rem] object-cover "
           />
           {/* Overlay Layer */}
           <div className="absolute inset-0 bg-black bg-opacity-70 w-full h-80 "></div>
@@ -35,7 +35,7 @@ function ContactPage() {
       </section>
       {/* Contact Form */}
       <section className="pt-20 px-5">
-        <div className="bg-slate-50 bg-opacity-25 rounded pb-10   shadow-md ">
+        <div className="bg-slate-50 bg-opacity-25 rounded pb-10 border-deepYellow  shadow-md ">
           <div
             className="text-3xl text-royalBlue px-5 font-Playfair font-bold
           tracking-wide pt-5 pb-5"

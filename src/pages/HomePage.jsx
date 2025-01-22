@@ -12,7 +12,7 @@ function HomePage() {
         <img
           src={boxPic}
           alt="boxPic"
-          className="w-full h-full object-cover md:h-[600px]"
+          className="w-full h-[37rem] object-cover md:h-[600px]"
         />
         {/* Overlay Layer */}
         <div className="absolute inset-0 bg-black bg-opacity-65"></div>
@@ -20,7 +20,7 @@ function HomePage() {
 
       <div>
         {/* Text Layer with Lazy Load and Slide-Up Effect */}
-        <section className="absolute top-24 px-3 text-slate-50  font-bold z-10 tracking-wide uppercase opacity-0 translate-y-10 animate-fadeInUp md:w-7/12 md:px-6 lg:px-10 lg:w-full">
+        <section className="absolute top-28 px-3 text-slate-50  font-bold z-10 tracking-wide uppercase opacity-0 translate-y-10 animate-fadeInUp md:w-7/12 md:px-6 lg:px-10 lg:w-full">
           <h1 className="font-extrabold mb-4 font-sans text-sm tracking-tight text-deepYellow lg:text-xl lg:pt-3 lg:pb-3">
             move with meezHaul
           </h1>
