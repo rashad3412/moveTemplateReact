@@ -10,7 +10,7 @@ function ContactPage() {
           <img
             src={movingBox}
             alt="boxPictureTwo"
-            className="w-full h-[20rem]  "
+            className="w-full h-[20rem] bg-cover bg-no-repeat bg-center"
           />
           {/* Overlay Layer */}
           <div className="absolute inset-0 bg-black bg-opacity-70 w-full h-80 "></div>

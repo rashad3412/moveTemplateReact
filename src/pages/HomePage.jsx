@@ -12,7 +12,7 @@ function HomePage() {
         <img
           src={boxPic}
           alt="boxPic"
-          className="w-full h-[37rem]  md:h-[600px]"
+          className="w-full h-[37rem] object-cover md:h-[600px]"
         />
         {/* Overlay Layer */}
         <div className="absolute inset-0 bg-black bg-opacity-65"></div>
