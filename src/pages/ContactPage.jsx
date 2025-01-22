@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 function ContactPage() {
   return (
     <div>
-      <section className="relative flex justify-center overflow-hidden">
-        <div className="relative rounded w-full">
+      <section className="relative flex justify-center overflow-auto scroll-smooth">
+        <div className="relative rounded w-full scroll-inherit">
           {/* Image */}
           <img
             src={movingBox}
             alt="boxPictureTwo"
-            className="w-full h-[20rem] bg-cover bg-no-repeat bg-center"
+            className="w-full h-[20rem] bg-cover bg-no-repeat bg-center "
           />
           {/* Overlay Layer */}
           <div className="absolute inset-0 bg-black bg-opacity-70 w-full h-80 "></div>
