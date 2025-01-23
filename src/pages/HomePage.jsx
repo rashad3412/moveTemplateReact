@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function HomePage() {
   return (
-    <div className="relative  md:h-fit overflow-hidden">
+    <div className="relative  md:h-fit">
       {/* Image Layer */}
       <div className="relative">
         <img
