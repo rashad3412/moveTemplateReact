@@ -184,9 +184,8 @@ function ContactPage() {
             </div>
           </div>
         </div>
+        <div className="pb-10"></div>
       </section>
-
-      <div className="pb-24 relative top-24">footer</div>
     </div>
   );
 }
