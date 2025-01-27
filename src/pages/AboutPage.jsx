@@ -33,15 +33,62 @@ function AboutPage() {
               </span>
             </div>
           </div>
-          <div className="px-4 w-3/4 relative top-10 ">
-            {" "}
+        </div>
+        <article className="w-[415px] mx-auto mt-16">
+          {/* Image Section */}
+          <div className="bg-white shadow-md rounded-lg">
             <img
               src={whiteBox}
               alt="whiteBox"
-              className="w-full  object-cover"
+              className="w-full rounded-t-lg"
             />
           </div>
-        </div>
+          <div className="px-4 w-11/12">
+            <div className="text-3xl font-extrabold font-Playfair pt-6  bg-gradient-to-r from-royalBlue to-deepYellow bg-clip-text text-transparent">
+              About Us
+            </div>
+            <div className="text-5xl font-Playfair pt-4 bg-gradient-to-r from-royalBlue to-lightGray bg-clip-text text-transparent">
+              Moving is always easy and Fast!
+            </div>
+          </div>
+
+          {/* Text Section */}
+
+          <p className="px-4 mt-4 text-gray-700 font-Roboto font-extralight text-lg">
+            At MeezHaul, we believe every move should be stress-free and
+            efficient. Our team is dedicated to providing tailored solutions for
+            your moving needs, ensuring that every step is handled with care and
+            professionalism. Whether you are relocating across town or across
+            the country, we are here to make the process seamless and enjoyable
+            for you and your family.
+          </p>
+          <ul className="px-4 mt-6 space-y-4 text-gray-700">
+            <li className="flex items-center space-x-2">
+              <span className="w-5 h-5 bg-deepYellow text-royalBlue font-bold rounded-full flex items-center justify-center">
+                ✓
+              </span>
+              <span className="text-lg font-medium">Fast</span>
+            </li>
+            <li className="flex items-center space-x-2">
+              <span className="w-5 h-5 bg-deepYellow text-royalBlue font-bold rounded-full flex items-center justify-center">
+                ✓
+              </span>
+              <span className="text-lg font-medium">Affordable</span>
+            </li>
+            <li className="flex items-center space-x-2">
+              <span className="w-5 h-5 bg-deepYellow text-royalBlue font-bold rounded-full flex items-center justify-center">
+                ✓
+              </span>
+              <span className="text-lg font-medium">Customer Satisfaction</span>
+            </li>
+            <li className="flex items-center space-x-2">
+              <span className="w-5 h-5 bg-deepYellow text-royalBlue font-bold rounded-full flex items-center justify-center">
+                ✓
+              </span>
+              <span className="text-lg font-medium">5 Star Service</span>
+            </li>
+          </ul>
+        </article>
       </section>
     </>
   );
