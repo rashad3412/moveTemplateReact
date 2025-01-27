@@ -52,7 +52,7 @@ function ContactPage() {
       </section>
 
       {/* Contact Form */}
-      <section className="pt-20 px-5 lg:flex lg:justify-center">
+      <section className="pt-20 px-5 lg:flex lg:justify-center pb-20">
         <div className="bg-slate-50 bg-opacity-25 rounded pb-10 border-deepYellow shadow-md px-5">
           <div className="text-3xl text-royalBlue font-Playfair font-bold tracking-wide pt-5 pb-5">
             Get In Touch
@@ -184,7 +184,7 @@ function ContactPage() {
             </div>
           </div>
         </div>
-        <div className="pb-10"></div>
+        <div className="pb-20 "></div>
       </section>
     </div>
   );

@@ -119,12 +119,12 @@ const NavBar = () => {
           <ul className="overflow-y-auto max-h-60 flex flex-col tracking-widest text-md px-4 font-sans font-thin text-lightGray">
             {[
               { name: "Home", path: "/" },
-              // { name: "About", path: "/about" },
+              { name: "About", path: "/about" },
               // { name: "Pages", path: "/pages" },
               // { name: "Service", path: "/service" },
               // { name: "Feature", path: "/feature" },
               // { name: "Blog", path: "/blog" },
-              // { name: "Contact", path: "/contact" },
+              { name: "Contact", path: "/contact" },
             ].map((link) => (
               <li key={link.name}>
                 <Link

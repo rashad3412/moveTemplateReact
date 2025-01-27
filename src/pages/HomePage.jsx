@@ -32,14 +32,19 @@ function HomePage() {
             Every step of your move, handled with care and precision.
           </p>
           <div className="flex relative top-20 gap-4 w-full ">
+            {/* Link to the contact page using button to navigate to page */}
             <Link to="/contact">
               <button className="border p-2 rounded bg-deepYellow text-royalBlue lg:text-2xl">
                 Start Move
               </button>
             </Link>
-            <button className="border p-2 rounded bg-royalBlue text-deepYellow lg:text-2xl">
-              About Us
-            </button>
+
+            {/* Link to the about page using button to navigate to page */}
+            <Link to="/about">
+              <button className="border p-2 rounded bg-royalBlue text-deepYellow lg:text-2xl">
+                About Us
+              </button>
+            </Link>
           </div>
           <div className="flex space-x-4 relative top-36 px-6 ">
             <button className="w-10 p-2 bg-deepYellow rounded-full cursor-pointer lg:text-xl">
