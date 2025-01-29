@@ -39,7 +39,7 @@ function AboutPage() {
           </div>
         )}
 
-        <article className="w-[415px] mx-auto mt-16 pb-10">
+        <article className="w-[415px] mx-auto mt-16 pb-10 md:w-6/12  ">
           {/* Image Section */}
           <div className="bg-white shadow-md rounded-lg">
             <img

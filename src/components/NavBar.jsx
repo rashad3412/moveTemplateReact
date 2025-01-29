@@ -82,25 +82,27 @@ const NavBar = () => {
             </button>
 
             {/* Links for Larger Screens */}
-            <div className="hidden lg:flex lg:min-w-56 lg:relative items-center space-x-6 ">
+            <ul className="hidden lg:flex lg:min-w-56 lg:relative items-center space-x-6">
               {[
-                "Home",
-                "About",
-                "Pages",
-                "Service",
-                "Feature",
-                "Blog",
-                "Contact",
+                { name: "Home", path: "/" },
+                { name: "About", path: "/about" },
+                // { name: "Pages", path: "/pages" },
+                // { name: "Service", path: "/service" },
+                // { name: "Feature", path: "/feature" },
+                // { name: "Blog", path: "/blog" },
+                { name: "Contact", path: "/contact" },
               ].map((link) => (
-                <Link
-                  href="#"
-                  key={link}
-                  className="block py-2 px-4 hover:decoration-deepYellow hover:underline hover:font-medium transition-all duration-300 cursor-pointer lg:text-md lg:hover:font-bold lg:px-1 lg:py-3"
-                >
-                  {link}
-                </Link>
+                <li key={link.name}>
+                  <Link
+                    to={link.path}
+                    className="block py-2 px-3 w-full text-left hover:bg-deepYellow hover:bg-opacity-20 hover:font-medium transition-all duration-300 cursor-pointer"
+                    onClick={handleLinkClick} // Close the menu when clicking a link
+                  >
+                    {link.name}
+                  </Link>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
         </div>
 
