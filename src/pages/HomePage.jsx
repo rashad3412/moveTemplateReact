@@ -3,6 +3,7 @@ import boxPic from "/assets/HomeComPics/boxPic.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import AboutPage from "../pages/AboutPage";
 
 function HomePage() {
   return (
@@ -12,7 +13,7 @@ function HomePage() {
         <img
           src={boxPic}
           alt="boxPic"
-          className="w-full h-[37rem] object-cover md:h-[600px]"
+          className="w-full h-[40rem] object-cover md:h-[600px]"
         />
         {/* Overlay Layer */}
         <div className="absolute inset-0 bg-black bg-opacity-65"></div>
@@ -59,6 +60,9 @@ function HomePage() {
           </div>
         </section>
       </div>
+      <section className="relative top-12 pb-10">
+        <AboutPage />
+      </section>
     </div>
   );
 }
