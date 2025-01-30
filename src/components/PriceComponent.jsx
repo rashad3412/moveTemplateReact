@@ -53,7 +53,7 @@ const Pricing = () => {
           </div>
           <div className="md:relative md:left-1/2">
             <div className="mt-10 max-w-lg bg-white w-11/12 shadow-lg rounded-lg mx-auto p-6 text-center">
-              <h4 className="text-xl font-semibold text-royalBlue"></h4>
+              <h4 className="text-xl font-semibold text-royalBlue">Premium</h4>
               <p className="text-gray-600">Subscription</p>
 
               {/* Price Section */}

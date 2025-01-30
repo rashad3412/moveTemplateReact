@@ -2,6 +2,7 @@ import movingBox from "/assets/HomeComPics/movingBoxes.jpg";
 import whiteBox from "/assets/HomeComPics/boxPicThree.jpg";
 import { Link, useLocation } from "react-router-dom";
 import PriceComponent from "../components/PriceComponent";
+import InfoBanner from "../components/InfoBanner";
 
 function AboutPage() {
   const location = useLocation();
@@ -39,62 +40,65 @@ function AboutPage() {
           </div>
         )}
 
-        <article className="w-[415px] mx-auto mt-16 pb-10 md:w-6/12  ">
-          {/* Image Section */}
+        <article className="w-[415px] mx-auto mt-16 pb-10 md:w-9/12 lg:w-11/12 lg:grid lg:grid-cols-2 lg:gap-8 ">
+          {/* Image Section - Left on Large Screens */}
           <div className="bg-white shadow-md rounded-lg">
             <img
               src={whiteBox}
               alt="whiteBox"
-              className="w-full rounded-t-lg"
+              className="w-full h-full object-cover rounded-lg"
             />
           </div>
-          <div className="px-4 w-11/12">
-            <div className=" relative top-2 text-xl font-extrabold font-Roboto pt-6 text-royalBlue drop-shadow-md ">
+
+          {/* Text Content - Right on Large Screens */}
+          <div className="px-4 w-full flex flex-col justify-center">
+            <div className="text-xl font-extrabold font-Roboto pt-6 text-royalBlue drop-shadow-md">
               About Us
             </div>
             <div className="text-4xl font-bold font-Playfair pt-4 text-royalBlue drop-shadow-md tracking-wider">
               Moving is always <span className="italic">easy</span> and{" "}
               <span className="underline decoration-royalBlue">Fast!</span>
             </div>
+            <p className="mt-4 text-gray-700 font-Roboto font-extralight text-lg">
+              At MeezHaul, we believe every move should be stress-free and
+              efficient. Our team is dedicated to providing tailored solutions
+              for your moving needs, ensuring that every step is handled with
+              care and professionalism. Whether you are relocating across town
+              or across the country, we are here to make the process seamless
+              and enjoyable for you and your family.
+            </p>
+
+            <ul className="mt-6 space-y-4 text-gray-700">
+              <li className="flex items-center space-x-2">
+                <span className="w-5 h-5 bg-deepYellow text-royalBlue font-bold rounded-full flex items-center justify-center">
+                  ✓
+                </span>
+                <span className="text-lg font-medium">Fast</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <span className="w-5 h-5 bg-deepYellow text-royalBlue font-bold rounded-full flex items-center justify-center">
+                  ✓
+                </span>
+                <span className="text-lg font-medium">Affordable</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <span className="w-5 h-5 bg-deepYellow text-royalBlue font-bold rounded-full flex items-center justify-center">
+                  ✓
+                </span>
+                <span className="text-lg font-medium">
+                  Customer Satisfaction
+                </span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <span className="w-5 h-5 bg-deepYellow text-royalBlue font-bold rounded-full flex items-center justify-center">
+                  ✓
+                </span>
+                <span className="text-lg font-medium">5 Star Service</span>
+              </li>
+            </ul>
           </div>
-
-          {/* Text Section */}
-
-          <p className="px-4 mt-4 text-gray-700 font-Roboto font-extralight text-lg">
-            At MeezHaul, we believe every move should be stress-free and
-            efficient. Our team is dedicated to providing tailored solutions for
-            your moving needs, ensuring that every step is handled with care and
-            professionalism. Whether you are relocating across town or across
-            the country, we are here to make the process seamless and enjoyable
-            for you and your family.
-          </p>
-          <ul className="px-4 mt-6 space-y-4 text-gray-700">
-            <li className="flex items-center space-x-2">
-              <span className="w-5 h-5 bg-deepYellow text-royalBlue font-bold rounded-full flex items-center justify-center">
-                ✓
-              </span>
-              <span className="text-lg font-medium">Fast</span>
-            </li>
-            <li className="flex items-center space-x-2">
-              <span className="w-5 h-5 bg-deepYellow text-royalBlue font-bold rounded-full flex items-center justify-center">
-                ✓
-              </span>
-              <span className="text-lg font-medium">Affordable</span>
-            </li>
-            <li className="flex items-center space-x-2">
-              <span className="w-5 h-5 bg-deepYellow text-royalBlue font-bold rounded-full flex items-center justify-center">
-                ✓
-              </span>
-              <span className="text-lg font-medium">Customer Satisfaction</span>
-            </li>
-            <li className="flex items-center space-x-2">
-              <span className="w-5 h-5 bg-deepYellow text-royalBlue font-bold rounded-full flex items-center justify-center">
-                ✓
-              </span>
-              <span className="text-lg font-medium">5 Star Service</span>
-            </li>
-          </ul>
         </article>
+        <InfoBanner />
         <PriceComponent />
       </section>
     </>
