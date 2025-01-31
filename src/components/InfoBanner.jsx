@@ -1,7 +1,7 @@
 const InfoBanner = () => {
   return (
     <section className="flex justify-center bg-royalBlue py-10">
-      <ul className="flex flex-wrap justify-center gap-10 md:gap-20 w-11/12 max-w-4xl h-auto ">
+      <ul className="flex flex-wrap justify-center gap-10 md:gap-20 w-11/12 max-w-4xl h-auto md:h-auto">
         <div className="text-center">
           <li className="text-4xl font-bold text-lightGray">100</li>
           <li className="text-lg text-deepYellow font-medium">

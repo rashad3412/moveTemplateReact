@@ -3,6 +3,7 @@ import whiteBox from "/assets/HomeComPics/boxPicThree.jpg";
 import { Link, useLocation } from "react-router-dom";
 import PriceComponent from "../components/PriceComponent";
 import InfoBanner from "../components/InfoBanner";
+import Testimonials from "../components/Testimonials";
 
 function AboutPage() {
   const location = useLocation();
@@ -100,6 +101,7 @@ function AboutPage() {
         </article>
         <InfoBanner />
         <PriceComponent />
+        <Testimonials />
       </section>
     </>
   );
