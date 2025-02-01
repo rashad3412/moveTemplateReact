@@ -38,12 +38,13 @@ const Testimonials = () => {
     }, 5000); // Change testimonial every 5 seconds
 
     return () => clearInterval(interval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
     <>
       {location.pathname !== "/" && (
-        <section className="relative text-white text-center py-10 min-h-[650px]">
+        <section className="relative text-white text-center py-10 min-h-[725px] md:min-h-[700px]">
           {/* Overlay & Image Wrapper */}
           <div className="absolute inset-0 z-0">
             <img
@@ -55,24 +56,23 @@ const Testimonials = () => {
           </div>
 
           {/* Text Content (Now On Top) */}
-          <div className="relative z-10 top-14">
+          <div className="relative z-10 top-20 md:text-xl md:top-14">
             <h3 className="text-md font-semibold font-Playfair uppercase tracking-wider text-deepYellow">
               Testimonials
             </h3>
-            <h1 className="text-4xl font-Roboto mt-2 font-extrabold tracking-normal">
+            <h1 className="text-4xl font-Roboto mt-2 font-extrabold tracking-normal ">
               What Clients Say
             </h1>
-            <p className="mt-4 text-lg max-w-lg mx-auto font-Roboto ">
+            <p className="mt-4 text-lg max-w-lg mx-auto font-Roboto md:text-3xl ">
               You heard it from us, now hear it from our clients!
             </p>
-            <article className="flex justify-center min-h-[25vh] relative">
+            <article className="flex justify-center min-h-[25vh] relative md:w-8/12 mx-auto">
               <div className="relative bg-slate-200 top-6 w-9/12 p-6 rounded-lg text-royalBlue border-royalBlue border shadow-lg text-lg leading-relaxed">
                 {testimonials[index].text}
               </div>
             </article>
-
             {/* Author Section */}
-            <div className="flex flex-col items-center relative top-8 border-t border-deepYellow pt-4 w-9/12 mx-auto">
+            <div className="flex flex-col items-center relative top-8 border-t border-deepYellow pt-4 w-9/12 mx-auto md:w-8/12">
               <h3 className="font-semibold text-xl tracking-wide font-Roboto">
                 {testimonials[index].author}
               </h3>
