@@ -44,7 +44,7 @@ function AboutPage() {
 
         <article className="w-[415px] mx-auto mt-16 pb-10 md:w-9/12 lg:w-11/12 lg:grid lg:grid-cols-2 lg:gap-8 ">
           {/* Image Section - Left on Large Screens */}
-          <div className="bg-white shadow-md rounded-lg">
+          <div className="shadow-md rounded-lg">
             <img
               src={whiteBox}
               alt="whiteBox"
@@ -104,7 +104,7 @@ function AboutPage() {
         <InfoBanner />
         <PriceComponent />
         <Testimonials />
-        <div className="relative w-full  bg-lightGray">
+        <div className="relative w-full  lg:hidden">
           <div className="absolute w-56 h-56 border-[1.7rem] border-deepYellow rounded-full clip-c-shape -left-36 mt-2"></div>
         </div>
         <TeamExperts />
