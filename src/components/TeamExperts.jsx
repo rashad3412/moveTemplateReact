@@ -9,7 +9,7 @@ const TeamExperts = () => {
     <>
       {location.pathname !== "/" && (
         <section>
-          <div className="relative mt-36 flex flex-col items-center  md:mt-32">
+          <div className="relative mt-36 flex flex-col items-center  md:mt-32 px-3 py-2">
             <h1 className="uppercase font-Roboto text-2xl font-extrabold tracking-wider text-royalBlue md:text-2xl ">
               Meet the Team
             </h1>
