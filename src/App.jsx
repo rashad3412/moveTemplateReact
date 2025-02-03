@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="bg-lightGray min-h-screen">
+      <div className="bg-lightGray min-h-screen ">
         <NavBar />
         <Routes>
           <Route path="/" element={<HomePage />} />

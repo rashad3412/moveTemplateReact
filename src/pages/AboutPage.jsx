@@ -4,6 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import PriceComponent from "../components/PriceComponent";
 import InfoBanner from "../components/InfoBanner";
 import Testimonials from "../components/Testimonials";
+import TeamExperts from "../components/TeamExperts";
 
 function AboutPage() {
   const location = useLocation();
@@ -99,9 +100,14 @@ function AboutPage() {
             </ul>
           </div>
         </article>
+
         <InfoBanner />
         <PriceComponent />
         <Testimonials />
+        <div className="relative w-full  bg-lightGray">
+          <div className="absolute w-56 h-56 border-[1.7rem] border-deepYellow rounded-full clip-c-shape -left-36 mt-2"></div>
+        </div>
+        <TeamExperts />
       </section>
     </>
   );
