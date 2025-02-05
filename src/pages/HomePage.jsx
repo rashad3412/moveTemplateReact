@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import AboutPage from "../pages/AboutPage";
+import ServicesPage from "../pages/ServicesPage";
+import InfoBanner from "../components/InfoBanner";
 
 function HomePage() {
   return (
@@ -59,10 +61,14 @@ function HomePage() {
             </button>
           </div>
         </section>
+        <section className="relative top-12 pb-10">
+          <AboutPage hideInfoBanner={true} />
+          <div className="mt-16">
+            <ServicesPage hideDivider={true} />
+          </div>
+          <InfoBanner />
+        </section>
       </div>
-      <section className="relative top-12 pb-10">
-        <AboutPage />
-      </section>
     </div>
   );
 }

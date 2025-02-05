@@ -5,8 +5,10 @@ import PriceComponent from "../components/PriceComponent";
 import InfoBanner from "../components/InfoBanner";
 import Testimonials from "../components/Testimonials";
 import TeamExperts from "../components/TeamExperts";
+import Divider from "../components/divider";
 
-function AboutPage() {
+// eslint-disable-next-line react/prop-types
+function AboutPage({ hideInfoBanner = false }) {
   const location = useLocation();
   return (
     <>
@@ -61,7 +63,7 @@ function AboutPage() {
               Moving is always <span className="italic">easy</span> and{" "}
               <span className="underline decoration-royalBlue">Fast!</span>
             </div>
-            <p className="mt-4 text-gray-700 font-Roboto font-extralight text-lg">
+            <p className="mt-4 text-gray-800 font-Roboto font-normal text-lg">
               At MeezHaul, we believe every move should be stress-free and
               efficient. Our team is dedicated to providing tailored solutions
               for your moving needs, ensuring that every step is handled with
@@ -70,7 +72,7 @@ function AboutPage() {
               and enjoyable for you and your family.
             </p>
 
-            <ul className="mt-6 space-y-4 text-gray-700">
+            <ul className="mt-6 space-y-4 text-gray-700 font-norma">
               <li className="flex items-center space-x-2">
                 <span className="w-5 h-5 bg-deepYellow text-royalBlue font-bold rounded-full flex items-center justify-center">
                   ✓
@@ -100,13 +102,11 @@ function AboutPage() {
             </ul>
           </div>
         </article>
-
-        <InfoBanner />
+        {/* Render InfoBanner only if hideInfoBanner is false */}
+        {!hideInfoBanner && <InfoBanner />}
         <PriceComponent />
         <Testimonials />
-        <div className="relative w-full  lg:hidden">
-          <div className="absolute w-56 h-56 border-[1.7rem] border-deepYellow rounded-full clip-c-shape -left-36 mt-2"></div>
-        </div>
+        <Divider />
         <TeamExperts />
       </section>
     </>
