@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import movingBox from "/assets/HomeComPics/movingBoxes.jpg";
 import FlipCard from "../components/FlipCard";
-// import Divider from "../components/divider";
+
 import { Truck, Globe, Package, Building2, Warehouse } from "lucide-react"; //
 
 const ServicesPage = () => {

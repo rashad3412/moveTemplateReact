@@ -5,7 +5,6 @@ import PriceComponent from "../components/PriceComponent";
 import InfoBanner from "../components/InfoBanner";
 import Testimonials from "../components/Testimonials";
 import TeamExperts from "../components/TeamExperts";
-import Divider from "../components/divider";
 
 // eslint-disable-next-line react/prop-types
 function AboutPage({ hideInfoBanner = false }) {
@@ -106,7 +105,9 @@ function AboutPage({ hideInfoBanner = false }) {
         {!hideInfoBanner && <InfoBanner />}
         <PriceComponent />
         <Testimonials />
-        <Divider />
+        <div className="relative w-full  lg:hidden md:hidden">
+          <div className="absolute w-56 h-56 border-[1.7rem] border-deepYellow rounded-full clip-c-shape -left-36 mt-2"></div>
+        </div>
         <TeamExperts />
       </section>
     </>
