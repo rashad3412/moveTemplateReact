@@ -64,7 +64,7 @@ function HomePage() {
         <section className="relative top-12 pb-10">
           <AboutPage hideInfoBanner={true} />
           <div className="mt-16">
-            <ServicesPage hideDivider={true} />
+            <ServicesPage />
           </div>
           <InfoBanner />
         </section>

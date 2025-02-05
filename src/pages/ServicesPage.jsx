@@ -1,11 +1,10 @@
 import { Link, useLocation } from "react-router-dom";
 import movingBox from "/assets/HomeComPics/movingBoxes.jpg";
 import FlipCard from "../components/FlipCard";
-import Divider from "../components/divider";
+// import Divider from "../components/divider";
 import { Truck, Globe, Package, Building2, Warehouse } from "lucide-react"; //
 
-// eslint-disable-next-line react/prop-types
-const ServicesPage = ({ hideDivider = false }) => {
+const ServicesPage = () => {
   const location = useLocation();
   return (
     <>
@@ -40,7 +39,7 @@ const ServicesPage = ({ hideDivider = false }) => {
             </div>
           </div>
         )}
-        {!hideDivider && <Divider />}
+        {/* {!hideDivider && <Divider />} */}
         <div className="flex flex-col justify-center relative top-14 items-center">
           <h1 className="font-Playfair text-2xl text-royalBlue font-extrabold tracking-wider">
             Services
