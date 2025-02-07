@@ -44,7 +44,7 @@ const ServicesPage = () => {
           <h1 className="font-Playfair text-2xl text-royalBlue font-extrabold tracking-wider">
             Services
           </h1>
-          <p className="text-4xl font-Roboto font-extrabold tracking-wide text-royalBlue mt-8">
+          <p className="text-4xl font-Roboto font-extrabold tracking-wide text-royalBlue mt-2">
             Best Services
           </p>
         </div>

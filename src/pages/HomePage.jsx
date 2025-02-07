@@ -1,9 +1,9 @@
 //Home ComponentP
 import boxPic from "/assets/HomeComPics/boxPic.jpg";
+import companyEmp from "/assets/HomeComPics/companyEmp.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import AboutPage from "../pages/AboutPage";
 import ServicesPage from "../pages/ServicesPage";
 import InfoBanner from "../components/InfoBanner";
 
@@ -61,8 +61,39 @@ function HomePage() {
             </button>
           </div>
         </section>
+
+        <article className="w-[415px] mx-auto mt-28 pb-10 md:w-9/12 lg:w-11/12 lg:grid lg:grid-cols-2 lg:gap-8 bg-slate-50 bg-opacity-35 rounded">
+          {/* Image Section - Left on Large Screens */}
+          <div className="shadow-md rounded-lg md:w-11/12 md:mx-auto md:pt-3">
+            <img
+              src={companyEmp}
+              alt="company employees"
+              className="w-full h-full object-cover rounded-lg"
+            />
+          </div>
+
+          {/* Text Content - Right on Large Screens */}
+          <div className="px-4 w-full flex flex-col justify-center">
+            <div className="text-4xl font-bold font-Playfair pt-4 text-royalBlue drop-shadow-md tracking-wider pb-5">
+              Your One-Stop Shop for Loading, Unloading, and{" "}
+              <span className="underline decoration-royalBlue">Moving!</span>
+            </div>
+
+            <p className="mt-4 text-gray-800 font-Roboto font-normal text-lg">
+              At MeezHaul, we’re more than just movers—we’re your partners in a
+              smooth, stress-free moving experience. Whether youre heading
+              across town or across the country, our expert team handles every
+              step with care and precision. From packing to unloading, we make
+              moving simple, efficient, and worry-free. Let’s get you settled
+              into your new space with ease!
+            </p>
+          </div>
+        </article>
+
         <section className="relative top-12 pb-10">
-          <AboutPage hideInfoBanner={true} />
+          <div className="relative w-full  lg:hidden ">
+            <div className="absolute w-56 h-56 border-[1.7rem] border-deepYellow rounded-full clip-c-shape -left-36 top-[-80px]"></div>
+          </div>
           <div className="mt-16">
             <ServicesPage />
           </div>
