@@ -71,27 +71,31 @@ const ServicesPage = () => {
             backText="We use high-quality materials to protect your items."
           />
 
-          {/* Row 2 */}
-          <FlipCard
-            icon={<Building2 size={40} className="text-royalBlue" />} // Office Icon
-            title="Office Relocation"
-            description="Smooth office moving solutions."
-            backText="We ensure a hassle-free transition for your workspace."
-          />
+          {location.pathname !== "/" && (
+            <>
+              {/* Row 2 */}
+              <FlipCard
+                icon={<Building2 size={40} className="text-royalBlue" />} // Office Icon
+                title="Office Relocation"
+                description="Smooth office moving solutions."
+                backText="We ensure a hassle-free transition for your workspace."
+              />
 
-          <FlipCard
-            icon={<Warehouse size={40} className="text-royalBlue" />} // Storage Icon
-            title="Storage Units"
-            description="Secure storage for your belongings."
-            backText="Short-term and long-term storage solutions."
-          />
+              <FlipCard
+                icon={<Warehouse size={40} className="text-royalBlue" />} // Storage Icon
+                title="Storage Units"
+                description="Secure storage for your belongings."
+                backText="Short-term and long-term storage solutions."
+              />
 
-          <FlipCard
-            icon={<Truck size={40} className="text-royalBlue" />} // Loading Icon
-            title="Loading and Unloading"
-            description="We load and unload the truck for you."
-            backText="Our skilled movers handle your items with care."
-          />
+              <FlipCard
+                icon={<Truck size={40} className="text-royalBlue" />} // Loading Icon
+                title="Loading and Unloading"
+                description="We load and unload the truck for you."
+                backText="Our skilled movers handle your items with care."
+              />
+            </>
+          )}
         </section>
       </section>
     </>

@@ -6,6 +6,7 @@ import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import ServicesPage from "../pages/ServicesPage";
 import InfoBanner from "../components/InfoBanner";
+import HowItWorks from "../components/HowItWorks";
 
 function HomePage() {
   return (
@@ -99,6 +100,7 @@ function HomePage() {
           </div>
           <InfoBanner />
         </section>
+        <HowItWorks />
       </div>
     </div>
   );
