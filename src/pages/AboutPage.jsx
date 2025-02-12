@@ -8,7 +8,7 @@ import TeamExperts from "../components/TeamExperts";
 
 // eslint-disable-next-line react/prop-types
 function AboutPage({ hideInfoBanner = false }) {
-  const location = useLocation();
+  const location = useLocation(); // useLocation to have the certain part of the code not in the homepage
   return (
     <>
       <section>

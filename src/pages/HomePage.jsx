@@ -1,12 +1,11 @@
 //Home ComponentP
 import boxPic from "/assets/HomeComPics/boxPic.jpg";
 import companyEmp from "/assets/HomeComPics/companyEmp.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import ServicesPage from "../pages/ServicesPage";
 import InfoBanner from "../components/InfoBanner";
 import HowItWorks from "../components/HowItWorks";
+import PriceComponent from "../components/PriceComponent";
 
 function HomePage() {
   return (
@@ -50,17 +49,6 @@ function HomePage() {
               </button>
             </Link>
           </div>
-          <div className="flex space-x-4 relative top-36 px-6 ">
-            <button className="w-10 p-2 bg-deepYellow rounded-full cursor-pointer lg:text-xl">
-              <FontAwesomeIcon icon={faArrowLeft} className="text-royalBlue" />
-            </button>
-            <button className=" w-10 p-2 bg-royalBlue rounded-full  cursor-pointer lg:text-xl">
-              <FontAwesomeIcon
-                icon={faArrowRight}
-                className="text-deepYellow"
-              />
-            </button>
-          </div>
         </section>
 
         <article className="w-[415px] mx-auto mt-28 pb-10 md:w-9/12 lg:w-11/12 lg:grid lg:grid-cols-2 lg:gap-8 bg-slate-50 bg-opacity-35 rounded">
@@ -102,6 +90,10 @@ function HomePage() {
         </section>
         <HowItWorks />
       </div>
+      <div className="relative w-full  lg:hidden p-8 ">
+        <div className="absolute w-56 h-56 border-[1.7rem] border-deepYellow rounded-full clip-c-shape -left-36 top-[-40px]"></div>
+      </div>
+      <PriceComponent />
     </div>
   );
 }
