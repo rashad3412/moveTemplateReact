@@ -6,7 +6,7 @@ const HowItWorks = () => {
       <>
         <section className="flex flex-col items-center text-center py-10">
           {/* Section Heading */}
-          <h1 className="text-royalBlue text-xl font-semibold tracking-wide">
+          <h1 className="text-royalBlue text-xl font-semibold tracking-wide font-Playfair">
             Working Process
           </h1>
           <h2 className="text-royalBlue text-3xl font-extrabold mt-2">
@@ -20,7 +20,7 @@ const HowItWorks = () => {
                 className="text-royalBlue bg-deepYellow rounded-full p-2"
               />
               <h3 className="text-lg font-semibold mt-3">Book Your Service</h3>
-              <p className="text-gray-700 mt-2 text-sm">
+              <p className="text-gray-700 mt-2 text-md  font-Roboto">
                 Schedule your move at your convenience with our easy booking
                 system.
               </p>
@@ -31,8 +31,10 @@ const HowItWorks = () => {
                 size={50}
                 className="text-royalBlue bg-deepYellow rounded-full p-2"
               />
-              <h3 className="text-lg font-semibold mt-3">Pack and Load</h3>
-              <p className="text-gray-700 mt-2 text-sm">
+              <h3 className="text-lg font-semibold mt-3 font-Playfair">
+                Pack and Load
+              </h3>
+              <p className="text-gray-700 mt-2 text-md  font-Roboto">
                 Our experts pack your belongings securely and load them with
                 care.
               </p>
@@ -43,8 +45,10 @@ const HowItWorks = () => {
                 size={50}
                 className="text-royalBlue bg-deepYellow rounded-full p-2"
               />
-              <h3 className="text-lg font-semibold mt-3">Transportation</h3>
-              <p className="text-gray-700 mt-2 text-sm">
+              <h3 className="text-lg font-semibold mt-3 font-Playfair">
+                Transportation
+              </h3>
+              <p className="text-gray-700 mt-2 text-md  font-Roboto">
                 We transport your items safely and efficiently to the
                 destination.
               </p>
@@ -55,8 +59,10 @@ const HowItWorks = () => {
                 size={50}
                 className="text-royalBlue bg-deepYellow rounded-full p-2"
               />
-              <h3 className="text-lg font-semibold mt-3">Safe Delivery</h3>
-              <p className="text-gray-700 mt-2 text-sm">
+              <h3 className="text-lg font-semibold mt-3 font-Playfair">
+                Safe Delivery
+              </h3>
+              <p className="text-gray-700 mt-2 text-md font-Roboto">
                 Your items arrive securely and on time, ready for your new
                 space.
               </p>

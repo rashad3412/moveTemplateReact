@@ -6,6 +6,7 @@ import ServicesPage from "../pages/ServicesPage";
 import InfoBanner from "../components/InfoBanner";
 import HowItWorks from "../components/HowItWorks";
 import PriceComponent from "../components/PriceComponent";
+import WhyUs from "../components/WhyUs";
 
 function HomePage() {
   return (
@@ -94,6 +95,7 @@ function HomePage() {
         <div className="absolute w-56 h-56 border-[1.7rem] border-deepYellow rounded-full clip-c-shape -left-36 top-[-40px]"></div>
       </div>
       <PriceComponent />
+      <WhyUs />
     </div>
   );
 }
