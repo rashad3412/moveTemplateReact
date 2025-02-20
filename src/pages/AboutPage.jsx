@@ -102,9 +102,9 @@ function AboutPage({ hideInfoBanner = false }) {
           </div>
         </article>
         {/* Render InfoBanner only if hideInfoBanner is false */}
-        {!hideInfoBanner && <InfoBanner />}
-        <PriceComponent />
         <Testimonials />
+        <PriceComponent />
+        {!hideInfoBanner && <InfoBanner />}
         <div className="relative w-full  lg:hidden md:hidden">
           <div className="absolute w-56 h-56 border-[1.7rem] border-deepYellow rounded-full clip-c-shape -left-36 mt-2"></div>
         </div>

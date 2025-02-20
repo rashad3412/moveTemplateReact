@@ -46,7 +46,7 @@ const NavBar = () => {
 
   return (
     <section>
-      {/* Banner */}
+      {/* Banner Component*/}
       <Banner />
 
       {/* NavBar */}
@@ -107,6 +107,7 @@ const NavBar = () => {
         </div>
 
         {/* Dropdown Menu for Mobile */}
+        {/* Links for mobile screens */}
         <div
           className={`lg:hidden overflow-hidden bg-royalBlue transition-all duration-500 ease-in-out ${
             isOpen ? "max-h-80 " : "max-h-0"
