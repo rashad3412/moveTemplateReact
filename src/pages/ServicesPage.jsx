@@ -3,6 +3,7 @@ import movingBox from "/assets/HomeComPics/movingBoxes.jpg";
 import FlipCard from "../components/FlipCard";
 
 import { Truck, Globe, Package, Building2, Warehouse } from "lucide-react"; //
+import ServiceDetails from "../components/ServiceDetails";
 
 const ServicesPage = () => {
   const location = useLocation();
@@ -97,6 +98,7 @@ const ServicesPage = () => {
             </>
           )}
         </section>
+        <ServiceDetails />
       </section>
     </>
   );
