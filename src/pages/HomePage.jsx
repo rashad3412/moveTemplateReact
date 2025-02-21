@@ -82,10 +82,6 @@ function HomePage() {
         </article>
 
         <section className="relative top-12 pb-10">
-          <div className="relative w-full  lg:hidden ">
-            <div className="absolute w-56 h-56 border-[1.7rem] border-deepYellow rounded-full clip-c-shape -left-36 top-[-80px]"></div>
-          </div>
-
           {/* Start rendering the component pages on homePage.jsx */}
           <div className="mt-16 md:mt-0 bg-gray-100">
             <ServicesPage />
@@ -95,9 +91,7 @@ function HomePage() {
         </section>
         <HowItWorks />
       </div>
-      <div className="relative w-full  lg:hidden p-8 ">
-        <div className="absolute w-56 h-56 border-[1.7rem] border-deepYellow rounded-full clip-c-shape -left-36 top-[-40px]"></div>
-      </div>
+
       <div className="bg-gray-100">
         <PriceComponent />
       </div>

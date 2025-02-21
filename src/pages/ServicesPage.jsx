@@ -9,9 +9,10 @@ const ServicesPage = () => {
   const location = useLocation();
   return (
     <>
-      <section>
-        {location.pathname !== "/" && (
-          <div className="relative rounded w-full h-[20rem] aspect-w-16 aspect-h-9 ">
+      {/* Hide this section on the homepage */}
+      {location.pathname !== "/" && (
+        <section>
+          <div className="relative rounded w-full h-[20rem] aspect-w-16 aspect-h-9">
             {/* Image */}
             <img
               src={movingBox}
@@ -39,67 +40,66 @@ const ServicesPage = () => {
               </div>
             </div>
           </div>
-        )}
-        {/* {!hideDivider && <Divider />} */}
-        <div className="flex flex-col justify-center relative top-14 items-center">
-          <h1 className="font-Playfair text-2xl text-royalBlue font-extrabold tracking-wider">
-            Services
-          </h1>
-          <p className="text-4xl font-Roboto font-extrabold tracking-wide text-royalBlue mt-2">
-            Best Services
-          </p>
-        </div>
-        <section className="flex flex-wrap justify-center gap-6 mt-24 pb-10 md:w-11/12 md:mx-auto lg:w-10/12 xl:w-9/12">
-          {/* Row 1 */}
-          <FlipCard
-            icon={<Truck size={40} className="text-royalBlue " />}
-            title="Local Moving"
-            description="Seamless local moving solutions."
-            backText="We ensure stress-free relocation in your city."
-          />
 
-          <FlipCard
-            icon={<Globe size={40} className="text-royalBlue" />}
-            title="Long Distance"
-            description="We help with cross-state moves."
-            backText="Our team manages long-distance moves efficiently."
-          />
+          <div className="flex flex-col justify-center relative top-14 items-center">
+            <h1 className="font-Playfair text-2xl text-royalBlue font-extrabold tracking-wider">
+              Services
+            </h1>
+            <p className="text-4xl font-Roboto font-extrabold tracking-wide text-royalBlue mt-2">
+              Best Services
+            </p>
+          </div>
 
-          <FlipCard
-            icon={<Package size={40} className="text-royalBlue" />}
-            title="Packing Services"
-            description="Professional packing for safe transport."
-            backText="We use high-quality materials to protect your items."
-          />
+          <section className="flex flex-wrap justify-center gap-6 mt-24 pb-10 md:w-11/12 md:mx-auto lg:w-10/12 xl:w-9/12">
+            {/* Row 1 */}
+            <FlipCard
+              icon={<Truck size={40} className="text-royalBlue " />}
+              title="Local Moving"
+              description="Seamless local moving solutions."
+              backText="We ensure stress-free relocation in your city."
+            />
 
-          {location.pathname !== "/" && (
-            <>
-              {/* Row 2 */}
-              <FlipCard
-                icon={<Building2 size={40} className="text-royalBlue" />} // Office Icon
-                title="Office Relocation"
-                description="Smooth office moving solutions."
-                backText="We ensure a hassle-free transition for your workspace."
-              />
+            <FlipCard
+              icon={<Globe size={40} className="text-royalBlue" />}
+              title="Long Distance"
+              description="We help with cross-state moves."
+              backText="Our team manages long-distance moves efficiently."
+            />
 
-              <FlipCard
-                icon={<Warehouse size={40} className="text-royalBlue" />} // Storage Icon
-                title="Storage Units"
-                description="Secure storage for your belongings."
-                backText="Short-term and long-term storage solutions."
-              />
+            <FlipCard
+              icon={<Package size={40} className="text-royalBlue" />}
+              title="Packing Services"
+              description="Professional packing for safe transport."
+              backText="We use high-quality materials to protect your items."
+            />
 
-              <FlipCard
-                icon={<Truck size={40} className="text-royalBlue" />} // Loading Icon
-                title="Loading and Unloading"
-                description="We load and unload the truck for you."
-                backText="Our skilled movers handle your items with care."
-              />
-            </>
-          )}
+            {/* Row 2 */}
+            <FlipCard
+              icon={<Building2 size={40} className="text-royalBlue" />}
+              title="Office Relocation"
+              description="Smooth office moving solutions."
+              backText="We ensure a hassle-free transition for your workspace."
+            />
+
+            <FlipCard
+              icon={<Warehouse size={40} className="text-royalBlue" />}
+              title="Storage Units"
+              description="Secure storage for your belongings."
+              backText="Short-term and long-term storage solutions."
+            />
+
+            <FlipCard
+              icon={<Truck size={40} className="text-royalBlue" />}
+              title="Loading and Unloading"
+              description="We load and unload the truck for you."
+              backText="Our skilled movers handle your items with care."
+            />
+          </section>
         </section>
+      )}
+      <div>
         <ServiceDetails />
-      </section>
+      </div>
     </>
   );
 };
