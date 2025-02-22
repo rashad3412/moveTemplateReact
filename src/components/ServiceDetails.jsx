@@ -29,7 +29,7 @@ const services = [
   {
     name: "Storage Units",
     description:
-      "Secure storage units available for short or long-term needsSecure and convenient storage units for your moving needs. We offer flexible storage options to accommodate your belongings, providing a safe space during your transition..",
+      "Secure storage units available for short or long-term needs. We offer flexible storage options to accommodate your belongings, providing a safe space during your transition.",
   },
 ];
 
@@ -41,28 +41,28 @@ const ServiceDetails = () => {
   };
 
   return (
-    <section className="bg-white mt-5 p-6 max-w-lg mx-auto shadow-lg rounded-lg">
-      <h1 className="text-2xl font-Playfair font-extrabold text-royalBlue mb-4 text-center">
-        All Services
+    <section className="bg-white mt-5 p-6 max-w-lg lg:max-w-3xl mx-auto shadow-xl rounded-xl">
+      <h1 className="text-3xl lg:text-4xl font-Playfair font-extrabold text-royalBlue mb-6 text-center">
+        Our Services
       </h1>
-      <ul className="space-y-2">
+      <ul className="space-y-4 lg:space-y-5">
         {services.map((service, index) => (
           <li key={index} className="cursor-pointer">
             <button
               onClick={() => toggleDescription(index)}
-              className="w-full flex justify-between items-center p-3 text-lg font-Playfair text-royalBlue bg-gray-100 rounded-lg hover:bg-gray-200 transition"
+              className="w-full flex justify-between items-center p-4 lg:p-5 text-lg lg:text-xl font-Playfair text-royalBlue bg-gray-100 rounded-lg hover:bg-gray-200 transition shadow-sm"
             >
               {service.name}
-              <span className="text-xl text-deepYellow">
+              <span className="text-2xl lg:text-3xl text-deepYellow">
                 {openIndex === index ? "▲" : "▼"}
               </span>
             </button>
             <div
               className={`overflow-hidden transition-all duration-300 ${
-                openIndex === index ? "max-h-40 p-3" : "max-h-0"
+                openIndex === index ? "max-h-40 p-4 lg:p-5" : "max-h-0"
               }`}
             >
-              <p className="text-gray-700 font-Roboto text-sm">
+              <p className="text-gray-700 font-Roboto text-md lg:text-lg">
                 {service.description}
               </p>
             </div>

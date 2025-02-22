@@ -97,7 +97,7 @@ const ServicesPage = () => {
           </section>
         </section>
       )}
-      <div>
+      <div className="pt-5 pb-8">
         <ServiceDetails />
       </div>
     </>
