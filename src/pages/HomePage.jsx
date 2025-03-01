@@ -65,10 +65,10 @@ function HomePage() {
 
           {/* Text Content - Right on Large Screens */}
           <div className="px-4 w-full flex flex-col justify-center">
-            <div className="text-4xl font-bold font-Playfair pt-4 text-royalBlue drop-shadow-md tracking-wider pb-5">
+            <p className="text-4xl font-bold font-Playfair pt-4 text-royalBlue drop-shadow-md tracking-wider pb-5">
               Your One-Stop Shop for Loading, Unloading, and{" "}
               <span className="underline decoration-royalBlue">Moving!</span>
-            </div>
+            </p>
 
             <p className="mt-4 text-gray-800 font-Roboto font-normal text-lg">
               At MeezHaul, we’re more than just movers—we’re your partners in a

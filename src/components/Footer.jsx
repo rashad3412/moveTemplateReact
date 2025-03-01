@@ -49,7 +49,7 @@ const Footer = () => {
           <p className="text-gray-400 font-Roboto">📞 (555) 123-4567</p>
 
           {/* Social Icons */}
-          <div className="flex space-x-4 mt-3">
+          <section className="flex space-x-4 mt-3">
             <a href="#" className="text-gray-400 hover:text-white">
               <i className="fab fa-facebook"></i>
             </a>
@@ -59,7 +59,7 @@ const Footer = () => {
             <a href="#" className="text-gray-400 hover:text-white">
               <i className="fab fa-instagram"></i>
             </a>
-          </div>
+          </section>
         </div>
       </div>
 

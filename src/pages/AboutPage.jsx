@@ -55,13 +55,13 @@ function AboutPage({ hideInfoBanner = false }) {
 
           {/* Text Content - Right on Large Screens */}
           <div className="px-4 w-full flex flex-col justify-center">
-            <div className="text-xl font-extrabold font-Roboto pt-6 text-royalBlue drop-shadow-md">
+            <h1 className="text-xl font-extrabold font-Roboto pt-6 text-royalBlue drop-shadow-md">
               About Us
-            </div>
-            <div className="text-4xl font-bold font-Playfair pt-4 text-royalBlue drop-shadow-md tracking-wider">
+            </h1>
+            <h2 className="text-4xl font-bold font-Playfair pt-4 text-royalBlue drop-shadow-md tracking-wider">
               Moving is always <span className="italic">easy</span> and{" "}
               <span className="underline decoration-royalBlue">Fast!</span>
-            </div>
+            </h2>
             <p className="mt-4 text-gray-800 font-Roboto font-normal text-lg">
               At MeezHaul, we believe every move should be stress-free and
               efficient. Our team is dedicated to providing tailored solutions

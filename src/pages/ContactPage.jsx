@@ -54,9 +54,9 @@ function ContactPage() {
       {/* Contact Form */}
       <section className="pt-20 px-5 lg:flex lg:justify-center pb-20">
         <div className="bg-slate-50 bg-opacity-25 rounded pb-10 border-deepYellow shadow-md px-5">
-          <div className="text-3xl text-royalBlue font-Playfair font-bold tracking-wide pt-5 pb-5">
+          <h1 className="text-3xl text-royalBlue font-Playfair font-bold tracking-wide pt-5 pb-5">
             Get In Touch
-          </div>
+          </h1>
           <div className="pb-5">
             <p>
               Fill out your information below and we will answer any questions

@@ -15,12 +15,12 @@ function Banner() {
           {/* Left Side: Logo */}
           <div className="flex flex-col space-y-4">
             <div className="w-16 h-16 flex items-center   text-royalBlue text-2xl font-Roboto font-bold  relative left-16 italic  xl:right-9">
-              <div className="w-8 h-8  flex items-center py-4 relative right-1 ">
+              <h1 className="w-8 h-8  flex items-center py-4 relative right-1 ">
                 <FontAwesomeIcon
                   icon={faTruckMoving}
                   className="text-royalBlue text-xl"
                 />
-              </div>
+              </h1>
               MeezHaul
             </div>
           </div>
@@ -35,10 +35,10 @@ function Banner() {
                   className="text-royalBlue text-lg"
                 />
               </div>
-              <div className="text-gray-600 lg:text-md font-bold tracking-wide ">
+              <h2 className="text-gray-600 lg:text-md font-bold tracking-wide ">
                 Call Us
                 <div className="font-light">123-456-789</div>
-              </div>
+              </h2>
             </div>
 
             {/* Email */}
@@ -49,10 +49,10 @@ function Banner() {
                   className="text-royalBlue text-lg"
                 />
               </div>
-              <div className="text-gray-600 lg:text-md font-bold  tracking-wide ">
+              <h2 className="text-gray-600 lg:text-md font-bold  tracking-wide ">
                 Email Us
                 <div className="font-light">MoveTemplate@gmail.com</div>
-              </div>
+              </h2>
             </div>
 
             {/* Address */}
@@ -63,10 +63,10 @@ function Banner() {
                   className="text-royalBlue text-lg"
                 />
               </div>
-              <div className="text-gray-600 lg:text-md font-bold  tracking-wide">
+              <h2 className="text-gray-600 lg:text-md font-bold  tracking-wide">
                 Address
                 <div className="font-light">123 Main Street</div>
-              </div>
+              </h2>
             </div>
             <div className="hidden xl:flex items-center gap-2">
               <span>
