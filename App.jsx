@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import NavBar from "./components/NavBar";
-import HomePage from "./pages/HomePage.jsx";
-import ContactPage from "./pages/ContactPage.jsx";
-import AboutPage from "./pages/AboutPage.jsx";
-import ServicesPage from "./pages/ServicesPage.jsx";
-import ScrollToTop from "./components/scrollEffect.jsx";
-import Footer from "./components/Footer.jsx";
+import NavBar from "./src/components/NavBar.jsx";
+import HomePage from "./src/pages/HomePage.jsx";
+import ContactPage from "./src/pages/ContactPage.jsx";
+import AboutPage from "./src/pages/AboutPage.jsx";
+import ServicesPage from "./src/pages/ServicesPage.jsx";
+import ScrollToTop from "./src/components/scrollEffect.jsx";
+import Footer from "./src/components/Footer.jsx";
 
 function App() {
   return (

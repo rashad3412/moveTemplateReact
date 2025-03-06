@@ -2,7 +2,7 @@
 import boxPic from "/assets/HomeComPics/boxPic.jpg";
 import companyEmp from "/assets/HomeComPics/companyEmp.jpg";
 import { Link } from "react-router-dom";
-import ServicesPage from "../pages/ServicesPage";
+import ServicesPage from "./ServicesPage";
 import InfoBanner from "../components/InfoBanner";
 import HowItWorks from "../components/HowItWorks";
 import PriceComponent from "../components/PriceComponent";
