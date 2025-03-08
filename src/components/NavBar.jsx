@@ -86,10 +86,8 @@ const NavBar = () => {
               {[
                 { name: "Home", path: "/" },
                 { name: "About", path: "/about" },
-                // { name: "Pages", path: "/pages" },
                 { name: "Service", path: "/service" },
-                // { name: "Feature", path: "/feature" },
-                // { name: "Blog", path: "/blog" },
+                { name: "Blog", path: "/blog" },
                 { name: "Contact", path: "/contact" },
               ].map((link) => (
                 <li key={link.name}>
@@ -123,10 +121,8 @@ const NavBar = () => {
             {[
               { name: "Home", path: "/" },
               { name: "About", path: "/about" },
-              // { name: "Pages", path: "/pages" },
               { name: "Service", path: "/service" },
-              // { name: "Feature", path: "/feature" },
-              // { name: "Blog", path: "/blog" },
+              { name: "Blog", path: "/blog" },
               { name: "Contact", path: "/contact" },
             ].map((link) => (
               <li key={link.name}>
