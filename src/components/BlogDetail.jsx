@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import teamWork from "/assets/HomeComPics/teamWork.jpg";
-import family from "/assets/HomeComPics/family.jpg";
+import familyPic from "/assets/HomeComPics/familyPic.jpg";
 import office from "/assets/HomeComPics/office.jpg";
 
 const blogPosts = {
@@ -22,7 +22,7 @@ const blogPosts = {
       behind a smooth move can ease the process. We discuss best 
       practices for moving families efficiently.
     `,
-    image: family,
+    image: familyPic,
   },
   "logistics-industry": {
     title: "Moving in the Logistics Industry!",

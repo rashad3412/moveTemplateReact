@@ -1,6 +1,6 @@
 import teamWork from "/assets/HomeComPics/teamWork.jpg";
 import office from "/assets/HomeComPics/office.jpg";
-import family from "/assets/HomeComPics/family.jpg";
+import familyPic from "/assets/HomeComPics/familyPic.jpg";
 import { Link } from "react-router-dom";
 
 const blogPosts = [
@@ -14,7 +14,7 @@ const blogPosts = [
     id: "moving-families",
     title: "Moving Families!",
     date: "Feb 08, 2025",
-    image: family,
+    image: familyPic,
   },
   {
     id: "logistics-industry",
